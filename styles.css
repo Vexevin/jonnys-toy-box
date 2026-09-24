@@ -10,10 +10,15 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 body {
   margin: 0;
   color: var(--paper);
+  overflow-x: hidden;
   background:
     radial-gradient(ellipse 70% 42% at 50% 6%, rgba(196,164,106,.18), transparent 58%),
     radial-gradient(ellipse 55% 34% at 68% 16%, rgba(88,170,220,.16), transparent 52%),
@@ -21,6 +26,8 @@ body {
     linear-gradient(180deg, #07060f 0%, #16101c 26%, var(--wood) 58%, var(--wood-deep) 100%);
   font-family: "Source Sans 3", sans-serif;
   line-height: 1.55;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
 .cosmos {
@@ -39,7 +46,7 @@ body {
 }
 .stars {
   top: -2rem;
-  width: min(100vw, 1080px);
+  width: min(100%, 1080px);
   height: 22rem;
   background-image:
     radial-gradient(1px 1px at 12% 22%, #fff6d4 60%, transparent 61%),
@@ -54,7 +61,7 @@ body {
 }
 .spill {
   top: -1rem;
-  width: min(72vw, 640px);
+  width: min(72%, 640px);
   height: 18rem;
   background:
     radial-gradient(ellipse at 50% 88%, rgba(244,228,184,.55), transparent 58%),
@@ -65,7 +72,7 @@ body {
 }
 .chest {
   top: .4rem;
-  width: min(88vw, 640px);
+  width: min(88%, 640px);
   height: auto;
   opacity: .92;
 }
@@ -88,14 +95,17 @@ a:hover { text-decoration: underline; }
 .lid {
   position: relative;
   z-index: 1;
-  padding: 7.5rem 1.25rem 1.2rem;
+  padding: calc(7.5rem + env(safe-area-inset-top)) 1.25rem 1.2rem;
+}
+.lid.narrow {
+  padding-top: calc(1.35rem + env(safe-area-inset-top));
 }
 .lid h1 {
   text-shadow: 0 2px 18px rgba(7,6,15,.65);
 }
 .tray { padding: 1.5rem 1.25rem 4rem; }
 footer {
-  padding: 0 1.25rem 3rem;
+  padding: 0 1.25rem calc(3rem + env(safe-area-inset-bottom));
   color: var(--muted);
   font-size: 0.9rem;
 }
@@ -108,6 +118,11 @@ footer {
   text-transform: uppercase;
   font-size: 0.72rem;
   color: var(--brass);
+}
+.mark a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 .hinge {
   width: 14px;
@@ -129,11 +144,17 @@ h2, h3 { font-family: Fraunces, Georgia, serif; }
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem 1.4rem;
+  gap: 0.35rem 0.4rem;
   margin: 1.6rem 0 0;
   font-size: 0.95rem;
 }
-nav a { color: var(--paper); }
+nav a {
+  color: var(--paper);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.55rem;
+}
 
 .felt {
   background: linear-gradient(180deg, #314338, var(--felt));
@@ -148,7 +169,7 @@ nav a { color: var(--paper); }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
   gap: 1rem;
 }
 
@@ -180,6 +201,11 @@ nav a { color: var(--paper); }
 .toy p { margin: 0 0 0.9rem; font-size: 0.94rem; flex: 1; color: var(--muted); }
 .toy.empty p { color: #c9d4c8; }
 .actions { display: flex; gap: 0.7rem; flex-wrap: wrap; font-size: 0.88rem; }
+.actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
 
 .panel {
   margin-top: 2.2rem;
@@ -196,22 +222,29 @@ input, textarea, select {
   color: var(--paper);
   border: 1px solid #6a4c34;
   border-radius: 4px;
-  padding: 0.55rem 0.65rem;
+  padding: 0.7rem 0.7rem;
   font: inherit;
+  font-size: 16px;
+  max-width: 100%;
 }
 textarea { min-height: 120px; resize: vertical; }
 
 button, .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 0.9rem;
   background: var(--brass);
   color: var(--ink);
   border: 0;
   border-radius: 4px;
-  padding: 0.62rem 1.05rem;
+  padding: 0.7rem 1.05rem;
+  min-height: 44px;
   font: 600 0.95rem "Source Sans 3", sans-serif;
   cursor: pointer;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(196,164,106,.35);
+  touch-action: manipulation;
 }
 button:hover, .btn:hover { filter: brightness(1.06); text-decoration: none; }
 .btn.secondary {
@@ -258,4 +291,13 @@ button:hover, .btn:hover { filter: brightness(1.06); text-decoration: none; }
 .news-item h2 {
   margin: 0 0 0.4rem;
   font-size: 1.35rem;
+}
+
+@media (max-width: 640px) {
+  .lid:not(.narrow) {
+    padding-top: calc(5.4rem + env(safe-area-inset-top));
+  }
+  .chest { width: 94%; }
+  .felt { border-width: 6px; padding: 1rem; }
+  h1 { font-size: clamp(2rem, 11vw, 3rem); }
 }
