@@ -11,6 +11,40 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="cosmos" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="spill"></div>
+    <svg class="chest" viewBox="0 0 640 280" role="img">
+      <title>An open chest with a galaxy spilling out</title>
+      <defs>
+        <linearGradient id="woodFace" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#6b4228"/>
+          <stop offset="1" stop-color="#2d1810"/>
+        </linearGradient>
+        <linearGradient id="lidFace" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#7a4a2c"/>
+          <stop offset="1" stop-color="#3a2216"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="70%" r="55%">
+          <stop offset="0" stop-color="#f4e4b8" stop-opacity=".95"/>
+          <stop offset=".35" stop-color="#c9a0ff" stop-opacity=".55"/>
+          <stop offset=".7" stop-color="#3aa7d4" stop-opacity=".2"/>
+          <stop offset="1" stop-color="#3aa7d4" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <ellipse cx="320" cy="168" rx="210" ry="48" fill="url(#glow)"/>
+      <path d="M118 168 L522 168 L490 248 L150 248 Z" fill="url(#woodFace)" stroke="#c4a46a" stroke-width="2"/>
+      <path d="M150 248 L490 248 L490 262 L150 262 Z" fill="#1c100b"/>
+      <rect x="300" y="176" width="40" height="18" rx="3" fill="#c4a46a"/>
+      <path d="M130 166 L510 166 L470 70 L170 70 Z" fill="url(#lidFace)" stroke="#c4a46a" stroke-width="2"/>
+      <path d="M190 92 L450 92" stroke="#c4a46a" stroke-width="1.4" opacity=".55"/>
+      <circle cx="248" cy="118" r="1.6" fill="#f7f0c8"/>
+      <circle cx="312" cy="108" r="2.1" fill="#fff6d4"/>
+      <circle cx="368" cy="124" r="1.4" fill="#d7c6ff"/>
+      <circle cx="402" cy="98" r="1.2" fill="#9fe7ff"/>
+    </svg>
+  </div>
+
   <header class="lid">
     <div class="mark"><span class="hinge" aria-hidden="true"></span> Opened for play</div>
     <h1>Jonny's Toy Box</h1>
