@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jonny's Toy Box</title>
+  <meta name="description" content="A shelf of games, tools, and experiments by Jonny Vexevin Light. Play first." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="lid">
+    <div class="mark"><span class="hinge" aria-hidden="true"></span> Opened for play</div>
+    <h1>Jonny's Toy Box</h1>
+    <p class="lede">A public shelf for games, apps, and tools. If a toy has a URL, it belongs here. If it is still HTML, the page says Prototype and opens it in a browser. Install waits for a file you can keep.</p>
+    <nav>
+      <a href="#shelf">The Shelf</a>
+      <a href="notes.html">Notes</a>
+      <a href="#bench">The Bench</a>
+    </nav>
+  </header>
+
+  <main class="tray">
+    <section class="felt" id="shelf">
+      <h2 class="section-title">The Shelf</h2>
+      <p class="section-note">If a toy is still an HTML file, it is a prototype. The page opens it in a browser. Install waits for a build you can keep on a device.</p>
+      <div class="grid">
+        <article class="toy">
+          <div class="status">Featured · Prototype · grok.me</div>
+          <h3>Lumina Photo Kaleidoscope</h3>
+          <p>An optical toy for a picture you already have. One spot, mirrored around the center.</p>
+          <div class="actions">
+            <a href="toys/lumina-photo-kaleidoscope.html">Open page</a>
+          </div>
+        </article>
+        <article class="toy">
+          <div class="status">Featured · Prototype · grok.me</div>
+          <h3>Lumina</h3>
+          <p>Making learning visible. A hosted HTML archive for seeing what a child was actually doing.</p>
+          <div class="actions">
+            <a href="toys/lumina.html">Open page</a>
+          </div>
+        </article>
+        <article class="toy">
+          <div class="status">Featured · Prototype · grok.me</div>
+          <h3>Singularity Slayer</h3>
+          <p>Clean the inner wall of a black-hole generator. Pre-release SSV216, playable in the browser.</p>
+          <div class="actions">
+            <a href="toys/singularity-slayer.html">Open page</a>
+          </div>
+        </article>
+        <article class="toy empty">
+          <div class="status">Workshop · Not on the front</div>
+          <h3>Pointer</h3>
+          <p>Simple to use. Not treated as ready. Kept in the workshop until you say it belongs on the shelf.</p>
+          <div class="actions">
+            <a href="toys/pointer.html">Workshop page</a>
+          </div>
+        </article>
+        <article class="toy empty">
+          <div class="status">Empty slot</div>
+          <h3>Next toy</h3>
+          <p>A new compartment appears when there is a page and, if it is an app, an install path.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="rules">
+      <h2 class="section-title">How a toy gets on the box</h2>
+      <ol class="steps">
+        <li>A public URL exists — today that is often a grok.me prototype.</li>
+        <li>The toy gets a dedicated page the same day. The first button is Open prototype.</li>
+        <li>A copy on GitHub or itch unlocks Source.</li>
+        <li>A file you can keep unlocks Download or Install.</li>
+        <li>Ideas without a URL stay off the shelf. Empty slots are the coming-soon.</li>
+      </ol>
+    </section>
+
+    <section class="panel" id="notes">
+      <h2 class="section-title">Notes</h2>
+      <p>Specifics, tutorials, and strategies stay short and sit behind each toy page. The binder is the same material in one list.</p>
+      <p><a href="notes.html">Open the notes binder</a></p>
+    </section>
+
+    <section class="panel" id="bench">
+      <h2 class="section-title">The Bench</h2>
+      <p>A form, not a forum. Leave a thought about a toy or the library.</p>
+      <form id="bench-form">
+        <label for="about">About</label>
+        <select id="about" name="about">
+          <option>The library as a whole</option>
+          <option>Lumina</option>
+          <option>Lumina Photo Kaleidoscope</option>
+          <option>Singularity Slayer</option>
+          <option>A new toy idea</option>
+        </select>
+        <label for="name">Name (optional)</label>
+        <input id="name" name="name" autocomplete="name" />
+        <label for="note">Note</label>
+        <textarea id="note" name="note" required placeholder="What did you try? What should exist next?"></textarea>
+        <button type="submit">Leave on the bench</button>
+        <p class="hint" id="bench-status">This proto stores the note in your browser only until a mailbox is wired.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="quiet">
+      <p>Jonny Vexevin Light · Montana · <a href="https://x.com/Vexevin">@Vexevin</a> · <a href="https://github.com/Vexevin/jonnys-toy-box">GitHub</a></p>
+      <p>Games for Causes is the later door. This box exists so making, sharing, and installing become ordinary first.</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById("bench-form");
+    const status = document.getElementById("bench-status");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const entry = {
+        about: form.about.value,
+        name: form.name.value.trim() || "anonymous",
+        note: form.note.value.trim(),
+        at: new Date().toISOString()
+      };
+      const key = "toybox-bench";
+      const prior = JSON.parse(localStorage.getItem(key) || "[]");
+      prior.unshift(entry);
+      localStorage.setItem(key, JSON.stringify(prior.slice(0, 50)));
+      form.reset();
+      status.textContent = "Set on the bench. On this proto it stays in this browser until a mailbox is wired.";
+    });
+  </script>
+</body>
+</html>
