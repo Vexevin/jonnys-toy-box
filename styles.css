@@ -15,10 +15,66 @@ body {
   margin: 0;
   color: var(--paper);
   background:
-    radial-gradient(1200px 600px at 20% -10%, #5a3a24 0%, transparent 55%),
-    linear-gradient(180deg, var(--wood) 0%, var(--wood-deep) 100%);
+    radial-gradient(ellipse 70% 42% at 50% 6%, rgba(196,164,106,.18), transparent 58%),
+    radial-gradient(ellipse 55% 34% at 68% 16%, rgba(88,170,220,.16), transparent 52%),
+    radial-gradient(ellipse 46% 30% at 28% 18%, rgba(168,120,255,.14), transparent 50%),
+    linear-gradient(180deg, #07060f 0%, #16101c 26%, var(--wood) 58%, var(--wood-deep) 100%);
   font-family: "Source Sans 3", sans-serif;
   line-height: 1.55;
+}
+
+.cosmos {
+  position: relative;
+  max-width: 1080px;
+  height: 0;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.stars,
+.spill,
+.chest {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.stars {
+  top: -2rem;
+  width: min(100vw, 1080px);
+  height: 22rem;
+  background-image:
+    radial-gradient(1px 1px at 12% 22%, #fff6d4 60%, transparent 61%),
+    radial-gradient(1.4px 1.4px at 28% 8%, #ffffff 55%, transparent 56%),
+    radial-gradient(1px 1px at 46% 18%, #d7c6ff 60%, transparent 61%),
+    radial-gradient(1.6px 1.6px at 63% 6%, #fff 55%, transparent 56%),
+    radial-gradient(1px 1px at 78% 16%, #9fe7ff 60%, transparent 61%),
+    radial-gradient(1.2px 1.2px at 88% 28%, #f7e3a1 55%, transparent 56%),
+    radial-gradient(1px 1px at 18% 36%, #fff 60%, transparent 61%),
+    radial-gradient(1px 1px at 54% 32%, #c9a0ff 60%, transparent 61%);
+  opacity: .7;
+}
+.spill {
+  top: -1rem;
+  width: min(72vw, 640px);
+  height: 18rem;
+  background:
+    radial-gradient(ellipse at 50% 88%, rgba(244,228,184,.55), transparent 58%),
+    radial-gradient(ellipse at 42% 62%, rgba(168,120,255,.28), transparent 60%),
+    radial-gradient(ellipse at 62% 58%, rgba(58,167,212,.22), transparent 62%);
+  filter: blur(8px);
+  animation: drift 16s ease-in-out infinite alternate;
+}
+.chest {
+  top: .4rem;
+  width: min(88vw, 640px);
+  height: auto;
+  opacity: .92;
+}
+@keyframes drift {
+  from { transform: translateX(-50%) translateY(0); opacity: .85; }
+  to { transform: translateX(-50%) translateY(-10px); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spill { animation: none; }
 }
 
 a { color: var(--brass); text-decoration: none; }
@@ -29,7 +85,14 @@ a:hover { text-decoration: underline; }
   margin-left: auto;
   margin-right: auto;
 }
-.lid { padding: 2.5rem 1.25rem 1rem; }
+.lid {
+  position: relative;
+  z-index: 1;
+  padding: 7.5rem 1.25rem 1.2rem;
+}
+.lid h1 {
+  text-shadow: 0 2px 18px rgba(7,6,15,.65);
+}
 .tray { padding: 1.5rem 1.25rem 4rem; }
 footer {
   padding: 0 1.25rem 3rem;
