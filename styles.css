@@ -1,0 +1,182 @@
+:root {
+  --wood: #3a2418;
+  --wood-deep: #24150e;
+  --brass: #c4a46a;
+  --paper: #f3e6d0;
+  --ink: #1c120c;
+  --felt: #2a3a2e;
+  --card: #4a3122;
+  --muted: #d7c4a6;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--paper);
+  background:
+    radial-gradient(1200px 600px at 20% -10%, #5a3a24 0%, transparent 55%),
+    linear-gradient(180deg, var(--wood) 0%, var(--wood-deep) 100%);
+  font-family: "Source Sans 3", sans-serif;
+  line-height: 1.55;
+}
+
+a { color: var(--brass); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.lid, .tray, footer {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lid { padding: 2.5rem 1.25rem 1rem; }
+.tray { padding: 1.5rem 1.25rem 4rem; }
+footer {
+  padding: 0 1.25rem 3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--brass);
+}
+.hinge {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--brass);
+  transform: rotate(45deg);
+}
+
+h1 {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  line-height: 1.05;
+  margin: 0.8rem 0 0.6rem;
+}
+h2, h3 { font-family: Fraunces, Georgia, serif; }
+.lede { max-width: 38rem; color: var(--muted); font-size: 1.08rem; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.4rem;
+  margin: 1.6rem 0 0;
+  font-size: 0.95rem;
+}
+nav a { color: var(--paper); }
+
+.felt {
+  background: linear-gradient(180deg, #314338, var(--felt));
+  border: 10px solid #2b1b12;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.35), 0 18px 40px rgba(0,0,0,0.28);
+  border-radius: 8px;
+  padding: 1.4rem;
+}
+
+.section-title { margin: 0 0 0.35rem; font-size: 1.6rem; }
+.section-note { color: #c9d4c8; margin: 0 0 1.2rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.toy {
+  background: linear-gradient(165deg, #5b3c28, var(--card));
+  color: var(--paper);
+  border: 1px solid #6b4a32;
+  border-radius: 6px;
+  padding: 1rem 1rem 0.9rem;
+  min-height: 168px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+.toy.empty {
+  background: transparent;
+  border: 1px dashed #7f917f;
+  color: #c9d4c8;
+  box-shadow: none;
+}
+.status {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 0.4rem;
+}
+.toy h3 { margin: 0 0 0.35rem; font-size: 1.2rem; }
+.toy p { margin: 0 0 0.9rem; font-size: 0.94rem; flex: 1; color: var(--muted); }
+.toy.empty p { color: #c9d4c8; }
+.actions { display: flex; gap: 0.7rem; flex-wrap: wrap; font-size: 0.88rem; }
+
+.panel {
+  margin-top: 2.2rem;
+  background: rgba(20, 12, 8, 0.35);
+  border: 1px solid #5b3f2b;
+  border-radius: 8px;
+  padding: 1.2rem 1.2rem 1.4rem;
+}
+
+label { display: block; font-size: 0.86rem; margin: 0.7rem 0 0.25rem; }
+input, textarea, select {
+  width: 100%;
+  background: #1a100b;
+  color: var(--paper);
+  border: 1px solid #6a4c34;
+  border-radius: 4px;
+  padding: 0.55rem 0.65rem;
+  font: inherit;
+}
+textarea { min-height: 120px; resize: vertical; }
+
+button, .btn {
+  display: inline-block;
+  margin-top: 0.9rem;
+  background: var(--brass);
+  color: var(--ink);
+  border: 0;
+  border-radius: 4px;
+  padding: 0.62rem 1.05rem;
+  font: 600 0.95rem "Source Sans 3", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+}
+button:hover, .btn:hover { filter: brightness(1.06); text-decoration: none; }
+.btn.secondary {
+  background: transparent;
+  color: var(--paper);
+  border: 1px solid #6a4c34;
+}
+.btn[aria-disabled="true"] {
+  opacity: 0.45;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.hint { font-size: 0.86rem; color: var(--muted); }
+.quiet { border-top: 1px solid #5b3f2b; padding-top: 1rem; }
+
+.narrow { max-width: 760px; }
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: center;
+  margin: 0.4rem 0 1.2rem;
+}
+.cta-row .btn { margin-top: 0; }
+.steps { padding-left: 1.15rem; }
+.steps li { margin: 0.35rem 0; }
+.meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
