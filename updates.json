@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "POI maker pass 3",
+      "stamp": "2026-10-18 19:23",
+      "note": "New POI Maker door: your Workshop build sits on a table you orbit and zoom; set a claim block, size the bubble, click to smart pick, export it, or drop in for a test.",
+      "image": "toys/updates/stonewake-poi-maker-pass-3.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Pebble shine",
       "stamp": "2026-10-18 18:23",
       "note": "The light pebbles on the meteor ground's black sand now catch a rainbow sheen that shifts as you move.",
