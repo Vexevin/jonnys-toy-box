@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "POI gallery",
+      "stamp": "2026-10-19 05:09",
+      "note": "The POI Maker is now a previewer: real block shapes and textures on the table, plus a gallery to pick, view, edit or test any POI.",
+      "image": "toys/updates/stonewake-poi-gallery.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "POI editor",
       "stamp": "2026-10-19 03:25",
       "note": "The POI Workshop is now an editor outside the game: a free camera with a tool panel, line, rectangle, box and plane fills, undo, and a POI library.",
