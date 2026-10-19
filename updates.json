@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "POI editor",
+      "stamp": "2026-10-19 03:25",
+      "note": "The POI Workshop is now an editor outside the game: a free camera with a tool panel, line, rectangle, box and plane fills, undo, and a POI library.",
+      "image": "toys/updates/stonewake-poi-editor.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Build Bot: distance rendering",
       "stamp": "2026-10-19 01:40",
       "note": "Build Bot's distance rendering is in: the far land past the real chunks is now drawn as blocky columns in the real block colours with water, snow tops and far trees, chunks build without stalling (worst frames about half), and a 60 fps cap is on by default.",
