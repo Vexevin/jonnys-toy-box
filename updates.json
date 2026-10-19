@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Build Bot: distance rendering",
+      "stamp": "2026-10-19 01:40",
+      "note": "Build Bot's distance rendering is in: the far land past the real chunks is now drawn as blocky columns in the real block colours with water, snow tops and far trees, chunks build without stalling (worst frames about half), and a 60 fps cap is on by default.",
+      "image": "toys/updates/stonewake-build-bot-distance-rendering.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Cave crack fix",
       "stamp": "2026-10-18 23:50",
       "note": "The crack near the start is now always in sight: the search checks several sight lines from eye height and re-checks after the cut.",
