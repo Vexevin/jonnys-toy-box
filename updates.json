@@ -1,0 +1,9 @@
+{
+  "about": "Patch notes for the toy pages, newest first by stamp. One entry per patch; post_update.py appends. Times are Mountain Time.",
+  "games": {
+    "stonewake": {"title": "Stonewake", "page": "toys/stonewake.html"},
+    "singularity-slayer": {"title": "Singularity Slayer", "page": "toys/singularity-slayer.html"},
+    "pointer": {"title": "Pointer", "page": "toys/pointer.html"}
+  },
+  "updates": []
+}
