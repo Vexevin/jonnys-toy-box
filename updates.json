@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Cave look test",
+      "stamp": "2026-10-18 22:06",
+      "note": "New worlds carve angular Voronoi cave tunnels that widen deep down, with one thin crack breaking the ground in sight of the start.",
+      "image": "toys/updates/stonewake-cave-look-test.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "POI maker pass 3",
       "stamp": "2026-10-18 19:23",
       "note": "New POI Maker door: your Workshop build sits on a table you orbit and zoom; set a claim block, size the bubble, click to smart pick, export it, or drop in for a test.",
