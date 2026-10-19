@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "POI capture",
+      "stamp": "2026-10-19 06:05",
+      "note": "Press Insert in a game to pause it, size a box around you from above, and save the land inside as a POI capture you can open in the editor.",
+      "image": "toys/updates/stonewake-poi-capture.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "POI gallery",
       "stamp": "2026-10-19 05:09",
       "note": "The POI Maker is now a previewer: real block shapes and textures on the table, plus a gallery to pick, view, edit or test any POI.",
