@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Cave crack fix",
+      "stamp": "2026-10-18 23:50",
+      "note": "The crack near the start is now always in sight: the search checks several sight lines from eye height and re-checks after the cut.",
+      "image": "toys/updates/stonewake-cave-crack-fix.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Cave look test",
       "stamp": "2026-10-18 22:06",
       "note": "New worlds carve angular Voronoi cave tunnels that widen deep down, with one thin crack breaking the ground in sight of the start.",
