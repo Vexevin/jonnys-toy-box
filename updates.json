@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Moves and the repair hammer",
+      "stamp": "2026-10-22 12:24",
+      "note": "Stone weapons get moves: dagger jabs, a spear you can throw, a hammer spin and slam that dazes, and the repair hammer now mends worn blocks.",
+      "image": "toys/updates/stonewake-moves-and-the-repair-hammer.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Loot block, Score, Sheet and Augments",
       "stamp": "2026-10-22 11:18",
       "note": "Marked loot blocks roll a scored sheet with augments; daggers, spear, war hammer, anti-armor sword and stone armor added.",
