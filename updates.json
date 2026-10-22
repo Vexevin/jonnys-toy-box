@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "P5 small jobs",
+      "stamp": "2026-10-22 08:34",
+      "note": "Build Bot: the first hit on a block no longer hitches, and world resets and self-tests are steadier.",
+      "image": "toys/updates/stonewake-p5-small-jobs.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Observer",
       "stamp": "2026-10-22 08:04",
       "note": "A read-only watcher now runs with the game; the pause page shows frame times, slow frames and errors.",
