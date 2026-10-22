@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Hands and body plus Armor",
+      "stamp": "2026-10-22 06:51",
+      "note": "An Off hand slot next to Pack, first-person arms whose sleeves follow your chest piece, and stone armor rules ready for the stone pieces.",
+      "image": "toys/updates/stonewake-hands-and-body-plus-armor.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Block destruction",
       "stamp": "2026-10-22 03:05",
       "note": "Hit blocks now wear away as little cubes, mostly from the side you hit, and ore shows its core inside.",
