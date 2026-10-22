@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Night hunters and the mob-spawner cube",
+      "stamp": "2026-10-22 15:48",
+      "note": "Ordinary nights now bring hounds and watchers that hunt you down unless you hide, and a placeable mob-spawner cube breeds them nearby.",
+      "image": "toys/updates/stonewake-night-hunters-and-the-mob-spawner-cube.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Moves and the repair hammer",
       "stamp": "2026-10-22 12:24",
       "note": "Stone weapons get moves: dagger jabs, a spear you can throw, a hammer spin and slam that dazes, and the repair hammer now mends worn blocks.",
