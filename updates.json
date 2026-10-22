@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Bush clumps",
+      "stamp": "2026-10-22 16:33",
+      "note": "Bushes that touch now grow into one clump, tall in the middle and lower toward the edges; it's only the look, and crouching anywhere in a clump hides you.",
+      "image": "toys/updates/stonewake-bush-clumps.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Night hunters and the mob-spawner cube",
       "stamp": "2026-10-22 15:48",
       "note": "Ordinary nights now bring hounds and watchers that hunt you down unless you hide, and a placeable mob-spawner cube breeds them nearby.",
