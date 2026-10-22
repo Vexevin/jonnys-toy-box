@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Loot block, Score, Sheet and Augments",
+      "stamp": "2026-10-22 11:18",
+      "note": "Marked loot blocks roll a scored sheet with augments; daggers, spear, war hammer, anti-armor sword and stone armor added.",
+      "image": "toys/updates/stonewake-loot-block-score-sheet-and-augments.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "P5 small jobs",
       "stamp": "2026-10-22 08:34",
       "note": "Build Bot: the first hit on a block no longer hitches, and world resets and self-tests are steadier.",
