@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Pickable saplings",
+      "stamp": "2026-10-22 17:34",
+      "note": "Felled trees can drop a sapling of their wood; plant it on grass or dirt and it grows into a tree in about 3 days.",
+      "image": "toys/updates/stonewake-pickable-saplings.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Bush clumps",
       "stamp": "2026-10-22 16:33",
       "note": "Bushes that touch now grow into one clump, tall in the middle and lower toward the edges; it's only the look, and crouching anywhere in a clump hides you.",
