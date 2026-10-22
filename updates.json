@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Block destruction",
+      "stamp": "2026-10-22 03:05",
+      "note": "Hit blocks now wear away as little cubes, mostly from the side you hit, and ore shows its core inside.",
+      "image": "toys/updates/stonewake-block-destruction.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "POI capture",
       "stamp": "2026-10-19 06:05",
       "note": "Press Insert in a game to pause it, size a box around you from above, and save the land inside as a POI capture you can open in the editor.",
