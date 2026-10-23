@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Roads",
+      "stamp": "2026-10-23 00:20",
+      "note": "New worlds get an endless main road with dirt trail branches to the POIs, sunk into the ground and joined at T junctions.",
+      "image": "toys/updates/stonewake-roads.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Sky day/night plates",
       "stamp": "2026-10-22 22:50",
       "note": "The sky is now your day, dusk and night pictures, turning once a day and melting into each other at dusk and dawn.",
