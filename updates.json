@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "V7: weapons kit",
+      "stamp": "2026-10-23 02:26",
+      "note": "Swords, axes and the stone loot weapons now show real flat-shaded models in your hand and in the inventory and crafting pictures.",
+      "image": "toys/updates/stonewake-v7-weapons-kit.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Map roads and POIs",
       "stamp": "2026-10-23 01:30",
       "note": "Both maps now draw every road in dark gray with yellow dashes, show ruins, villages, keeps and dungeons with an icon and name once you have seen them, and a Map settings menu toggles each layer.",
