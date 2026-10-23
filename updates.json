@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Cave skeleton",
+      "stamp": "2026-10-23 09:42",
+      "note": "0.2.23: the cave skeletons are now proper bony skeletons (KayKit Skeleton_Minion) with glowing eyes; they walk, idle, flinch and collapse. Their strike is a stand-in throw [placeholder]. Hitbox, speed and AI unchanged.",
+      "image": "toys/updates/stonewake-cave-skeleton.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Night watcher",
       "stamp": "2026-10-23 09:00",
       "note": "0.2.22: the night watcher is now a hooded skeleton (KayKit Skeleton_Rogue) with glowing eyes; it walks, watches, flinches and collapses. Its strike is a stand-in throw [placeholder]. Hitbox, speed and AI unchanged.",
