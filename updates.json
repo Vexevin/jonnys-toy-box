@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Sky selector",
+      "stamp": "2026-10-23 11:27",
+      "note": "New Sky option in Graphics settings: Painted (default) or Skybox, a drawn sky with a ring whose highest point is due south and a planet shadow that moves with the sun, plus your own skyboxes from a folder. Applies live; saves untouched.",
+      "image": "toys/updates/stonewake-sky-selector.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Cave skeleton",
       "stamp": "2026-10-23 09:42",
       "note": "0.2.23: the cave skeletons are now proper bony skeletons (KayKit Skeleton_Minion) with glowing eyes; they walk, idle, flinch and collapse. Their strike is a stand-in throw [placeholder]. Hitbox, speed and AI unchanged.",
