@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "V7: licensed sounds",
+      "stamp": "2026-10-23 03:54",
+      "note": "Licensed sound packs fill the quiet moments: footsteps in time with your stride, chests, doors, portal, Wake sting, hurt and death, forest and cave ambience.",
+      "image": "toys/updates/stonewake-v7-licensed-sounds.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "V7: weapons kit",
       "stamp": "2026-10-23 02:26",
       "note": "Swords, axes and the stone loot weapons now show real flat-shaded models in your hand and in the inventory and crafting pictures.",
