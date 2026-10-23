@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Map roads and POIs",
+      "stamp": "2026-10-23 01:30",
+      "note": "Both maps now draw every road in dark gray with yellow dashes, show ruins, villages, keeps and dungeons with an icon and name once you have seen them, and a Map settings menu toggles each layer.",
+      "image": "toys/updates/stonewake-map-roads-and-pois.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Roads",
       "stamp": "2026-10-23 00:20",
       "note": "New worlds get an endless main road with dirt trail branches to the POIs, sunk into the ground and joined at T junctions.",
