@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Sky day/night plates",
+      "stamp": "2026-10-22 22:50",
+      "note": "The sky is now your day, dusk and night pictures, turning once a day and melting into each other at dusk and dawn.",
+      "image": "toys/updates/stonewake-sky-day-night-plates.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Sky moon",
       "stamp": "2026-10-22 20:55",
       "note": "A moon now crosses the night sky from east to west, and on Wake nights a red portal moon ripples open over it, then switches off like an old TV at dawn if you survive.",
