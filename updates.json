@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Smoother roads v3",
+      "stamp": "2026-10-23 15:20",
+      "note": "Smoother roads v3 (0.2.27): new worlds' roads now hold the 2 m max cut across the whole laid network, whatever order the pieces are laid in (seed 4242: 0 stations over, forward, reversed, shuffled). F7 Road generation panel and setup sliders as before; older worlds keep their roads.",
+      "image": "toys/updates/stonewake-smoother-roads-v3.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Watcher cloth tints (0.2.26)",
       "stamp": "2026-10-23 14:11",
       "note": "Each night watcher's hood and cape now wear one of six muted colours (dusty red, moss green, faded blue, brown, gray, ochre), picked from where it spawns and kept by its corpse; body and glowing eyes unchanged.",
