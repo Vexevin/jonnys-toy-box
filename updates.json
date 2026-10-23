@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Sky sun",
+      "stamp": "2026-10-22 19:09",
+      "note": "Jonny's sun picture now rises in the east at dawn, crosses the sky on the day clock and sets in the west at dusk; hidden at night.",
+      "image": "toys/updates/stonewake-sky-sun.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Build Bot: version label",
       "stamp": "2026-10-22 18:16",
       "note": "A small version tag (v0.2.10) now sits in the bottom-right corner of the menu and the game.",
