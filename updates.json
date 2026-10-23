@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "V7: dusk hound model",
+      "stamp": "2026-10-23 06:35",
+      "note": "Night hounds are wolves now: a near-black Quaternius wolf (CC0) with ember eyes that walks while it wanders, gallops when it hunts you, lunges on the bite, flinches when hit and falls where it dies. Same hound underneath: size, speed, damage and AI unchanged.",
+      "image": "toys/updates/stonewake-v7-dusk-hound-model.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "V7: player model",
       "stamp": "2026-10-23 05:30",
       "note": "You are the KayKit Rogue now: first person shows its own arms holding the sword, axe or loot weapon, and the Worn panel shows the whole Rogue, tinted by what you wear. Swings use a stand-in throw motion until the animation pack arrives.",
