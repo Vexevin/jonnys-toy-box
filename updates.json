@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "V7: road ghost fix",
+      "stamp": "2026-10-23 04:47",
+      "note": "The red delete outline the Road gun shows over a road piece no longer folds over itself on tight bends: on hairpins and short curves part of it used to turn upside down and vanish. Roads, saves and the gun are otherwise unchanged.",
+      "image": "toys/updates/stonewake-v7-road-ghost-fix.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "V7: licensed sounds",
       "stamp": "2026-10-23 03:54",
       "note": "Licensed sound packs fill the quiet moments: footsteps in time with your stride, chests, doors, portal, Wake sting, hurt and death, forest and cave ambience.",
