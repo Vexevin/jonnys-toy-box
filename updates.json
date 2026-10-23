@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Sky moon",
+      "stamp": "2026-10-22 20:55",
+      "note": "A moon now crosses the night sky from east to west, and on Wake nights a red portal moon ripples open over it, then switches off like an old TV at dawn if you survive.",
+      "image": "toys/updates/stonewake-sky-moon.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Sky sun",
       "stamp": "2026-10-22 19:09",
       "note": "Jonny's sun picture now rises in the east at dawn, crosses the sky on the day clock and sets in the west at dusk; hidden at night.",
