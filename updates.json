@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Build Bot: version label",
+      "stamp": "2026-10-22 18:16",
+      "note": "A small version tag (v0.2.10) now sits in the bottom-right corner of the menu and the game.",
+      "image": "toys/updates/stonewake-build-bot-version-label.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Pickable saplings",
       "stamp": "2026-10-22 17:34",
       "note": "Felled trees can drop a sapling of their wood; plant it on grass or dirt and it grows into a tree in about 3 days.",
