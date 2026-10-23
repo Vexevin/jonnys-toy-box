@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Star twinkle",
+      "stamp": "2026-10-23 08:00",
+      "note": "0.2.21 CL: the night and dusk skies' stars now twinkle softly (dim to about 40%, 1-3 s each, on their own clock), a little more near the horizon, and keep twinkling under the Wake tint. The moons stay steady. No toggle.",
+      "image": "toys/updates/stonewake-star-twinkle.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "V7: dusk hound model",
       "stamp": "2026-10-23 06:35",
       "note": "Night hounds are wolves now: a near-black Quaternius wolf (CC0) with ember eyes that walks while it wanders, gallops when it hunts you, lunges on the bite, flinches when hit and falls where it dies. Same hound underneath: size, speed, damage and AI unchanged.",
