@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "0.2.32 — Golems",
+      "stamp": "2026-10-24 03:35",
+      "note": "Stone, Ore, Crystal, Volcanic, and Toxic smoger golems roam their biomes and underground in Soldier, Commander, and King boss tiers (KayKit CC0), dropping Black glass, Toxic gel, rolled gear, and 3-slot King boss weapons for the Augment bench, plus Wake night golem raids.",
+      "image": "toys/updates/stonewake-0-2-32-golems.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "0.2.31 — Controller support",
       "stamp": "2026-10-24 01:30",
       "note": "Full gamepad support in GDScript (Xbox, PlayStation, Switch Pro, Steam Deck): left stick moves, right stick looks or drives the virtual menu cursor, A/B/X/Y, LB/RB, triggers, D-pad, auto-switching HUD badges, and Settings > Controller (sensitivity, Invert Y, deadzone).",
