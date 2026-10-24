@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "Creative and fixes (0.2.29)",
+      "stamp": "2026-10-23 20:52",
+      "note": "Creative and fixes (0.2.29): press F1 in any world to switch between Creative and Survival (~ opens the dev console), held axes now face blade-forward in first person, the spoken-number hurt sounds are unwired, and dusk hounds play their new bite sound.",
+      "image": "toys/updates/stonewake-creative-and-fixes-0-2-29.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "Boiler hearth (0.2.28)",
       "stamp": "2026-10-23 19:29",
       "note": "Boiler hearth (0.2.28): build one at the Builder's Block (12 stone, 4 wood), hold a log and press E. It burns until dawn, and no Wake or night-hunter mob spawns within 6 blocks of it; they can still walk up. Placeholder model.",
