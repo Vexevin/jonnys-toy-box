@@ -17,6 +17,13 @@
   "updates": [
     {
       "game": "stonewake",
+      "name": "0.2.31 — Controller support",
+      "stamp": "2026-10-24 01:30",
+      "note": "Full gamepad support in GDScript (Xbox, PlayStation, Switch Pro, Steam Deck): left stick moves, right stick looks or drives the virtual menu cursor, A/B/X/Y, LB/RB, triggers, D-pad, auto-switching HUD badges, and Settings > Controller (sensitivity, Invert Y, deadzone).",
+      "image": "toys/updates/stonewake-0-2-31-controller-support.jpg"
+    },
+    {
+      "game": "stonewake",
       "name": "0.2.30 — Augment bench",
       "stamp": "2026-10-23 23:05",
       "note": "Build an Augment bench at the Builder's Block (8 stone, 4 wood). Press E on it to open its 3-column bench: break down a rolled item on the pedestal to learn its augment(s) in that world, slot a learned augment into an empty slot on a rolled weapon or tool for gold, or clear a filled slot.",
